@@ -1,14 +1,13 @@
 #!/usr/bin/python3
-"""Defines a base model class."""
 
+"""Defines a base model class."""
 import json
 import csv
 import turtle
 
 
 class Base:
-    """
-    Base model.
+    """Base model.
 
     Private Class Attributes:
         __nb_object (int): Number of instantiated Bases.
@@ -17,11 +16,10 @@ class Base:
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """
-        Create a new Base.
+        """Create a new Base.
 
         Args:
-            id (int): new Base identity
+            id (int): The identity of the new Base.
         """
         if id is not None:
             self.id = id
@@ -31,8 +29,7 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        """
-        Return the JSON serialization of a list of dicts.
+        """Return the JSON serialization of a list of dicts.
 
         Args:
             list_dictionaries (list): A list of dictionaries.
